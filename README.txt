@@ -1,0 +1,1 @@
+Template adapted from HTML5 UP. Adapted for SLoMO @ ICCV 2025. Movie frames in title background are sourced from the Condensed Movies dataset.

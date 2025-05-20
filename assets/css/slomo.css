@@ -1,0 +1,331 @@
+/* =========================================================
+   SLoMO Workshop – light theme overrides
+   loaded *after* HTML5-UP “Stellar” main.css
+   ========================================================= */
+
+/* ---------- COLOUR, BACKGROUND & TEXT CONTRAST ---------- */
+body { background: #eee; color: #111; }
+#nav, #nav.alt { background: #e7e7e7; }
+#main { background: #fff; }
+#main header.major h2:after { background: #8cc9f0 !important; }
+
+h1, h2, h3, h4, h5, h6,
+header.major h2 { color: #000; }
+
+a { color: #177ab7; }
+a:hover { color: #0f2e6e; }
+
+/* ---------- TYPOGRAPHY ---------- */
+body, input, select, textarea { font-size: 14pt; }
+h2 { font-size: 1.3em; }
+
+/* ---------- GLOBAL UI ELEMENTS ---------- */
+.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+    color: #535353 !important;
+    box-shadow: inset 0 0 0 1px #ddd;
+}
+.button.primary { background: #8cc9f0; }
+
+tr.alternate:nth-child(2n+1) { background: rgba(0,0,0,.025); }
+
+/* ---------- HEADER ---------- */
+#header {
+    position: relative;
+    padding: 0.4em 0 0.2em;
+}
+
+#header .hero-bg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url("images/hero_bg.png") center/cover no-repeat;
+}
+
+#header h1 {
+    font-size: 1.9em !important;
+    color: #ffffff;
+    font-weight: 400;
+    margin: 0 0 0.15em;
+}
+
+#header p {
+    font-size: 1.0em;
+    color: #ffffff;
+    font-weight: 300;
+    margin: 0 0 0.10em;
+}
+
+#header.alt {
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    height: 45vh;
+    padding-top: 4.0rem !important;
+}
+
+#header h1, #header p {
+    margin-top: 0;
+}
+
+/* ---------- SECTION HEADINGS ---------- */
+header.major {
+    text-align: center;
+    margin: -2.8em 0 1.5em !important;
+}
+header.major h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.25em;
+}
+header.major h2:after {
+    margin: 0.3em auto 0;
+    background: #8cc9f0 !important;
+}
+
+/* ---------- NORMALISED SMALL COPY ---------- */
+#schedule table,
+#schedule th,
+#schedule td,
+#speakers h3, #speakers p,
+#organizers h3, #organizers p {
+    font-size: 0.95em;
+}
+
+/* ---------- NAME / AFFILIATION STYLING ---------- */
+#speakers h3, #organizers h3 {
+    color: #333;
+    font-weight: 500;
+    margin: 0 0 0.10em;
+}
+#speakers p, #organizers p {
+    color: #444;
+    margin: 0 0 1.20em;
+}
+
+/* ---------- SPEAKER & ORGANISER CARDS ---------- */
+ul.features li {
+    text-align: center;
+}
+ul.features li .image.avatar img {
+    width: 75%;
+    display: block;
+    margin: 0 auto 0.1em;
+}
+
+#speakers .icon.major,
+#organizers .icon.major {
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+#speakers .icon.major:before,
+#organizers .icon.major:before {
+    border: none;
+    box-shadow: none;
+    transform: scale(0.75);
+    transform-origin: center;
+}
+
+#speakers ul.features,
+#organizers ul.features {
+    justify-content: center;
+    width: auto;
+    margin: 0 auto 3em;
+    padding-left: 0;
+    transform: translateX(0.1em);
+}
+#speakers ul.features li {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 1em;
+    margin: 0;
+    box-sizing: border-box;
+}
+#organizers ul.features li {
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding: 0 1em;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- NAVIGATION BAR ---------- */
+#nav, #nav.alt {
+    padding: 0.35em 1em;
+    background: #e7e7e7;
+}
+#nav ul, #nav.alt ul {
+    margin-left: -0.9em;
+}
+#nav ul li a,
+#nav ul li a:hover,
+#nav ul li a.active {
+    font-weight: 300;
+}
+#nav ul li a.active {
+    background-color: #8cc9f0;
+    color: #ffffff !important;
+    border-radius: 0.35em;
+}
+#nav + #main {
+    padding-top: 2.7em;
+}
+
+/* ---------- MAIN BLOCKS ---------- */
+#main > .main {
+    padding-bottom: 1.25em !important;
+    margin-bottom: 0 !important;
+}
+
+/* ---------- CUSTOM BULLETS ---------- */
+.icon-bullets {
+    list-style: none;
+    padding-left: 0;
+}
+.icon-bullets li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.2em;
+}
+.icon-bullets li::before {
+    content: "";
+    position: absolute;
+    top: 0.4em;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-image: url('images/slomo_O_black.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.subtle-bullets li::marker {
+    font-size: 1em;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+/* ---------- MOBILE ADAPTATIONS ---------- */
+@media (max-width: 736px) {
+    body,
+    input,
+    select,
+    textarea,
+    p,
+    li,
+    table,
+    th,
+    td {
+        font-size: 0.85em !important;
+        text-align: left !important;
+    }
+
+    #header {
+        height: 30vh !important;
+    }
+
+    #header h1 {
+        font-size: 1.2em !important;
+        text-align: center !important;
+    }
+
+    #header p {
+        font-size: 0.9em !important;
+        text-align: left !important;
+    }
+
+    header.major {
+        margin-top: -1.5em !important;
+        text-align: center !important;
+    }
+
+    header.major h2 {
+        font-size: 1.1em !important;
+    }
+
+    #nav + #main {
+        padding-top: 0.5em;
+    }
+
+    ul:not(.icon-bullets):not(.actions):not(.features),
+    ol {
+        padding-left: 0.5em !important;
+        margin-left: 1em !important;
+    }
+
+    .icon-bullets li {
+        padding-left: 2em;
+        text-align: left !important;
+    }
+    .icon-bullets li::before {
+        width: 12px;
+        height: 12px;
+        top: 0.2em;
+    }
+
+    #nav ul li a {
+        font-size: 0.85em !important;
+        text-align: left;
+    }
+
+    #speakers ul.features,
+    #organizers ul.features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between !important;
+        margin: 0 auto !important;
+        padding-left: 0 !important;
+        transform: none !important;
+    }
+
+    #speakers ul.features li,
+    #organizers ul.features li {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+        padding: 0 0.5em;
+        text-align: center !important;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    ul.features li .image.avatar img {
+        width: 65%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        display: block;
+        border-radius: 0.5em;
+    }
+
+    #speakers h3,
+    #organizers h3,
+    #speakers p,
+    #organizers p {
+        font-size: 0.85em;
+        text-align: center !important;
+    }
+
+    #speakers h3,
+    #organizers h3 {
+        margin: 0.3em 0 0.3em;
+        color: #333;
+        font-weight: 500;
+    }
+
+    #speakers p,
+    #organizers p {
+        margin: 0 0 2.0em;
+        color: #444;
+    }
+}
