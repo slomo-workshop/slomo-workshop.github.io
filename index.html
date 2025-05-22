@@ -8,6 +8,7 @@
         <title>SLoMO - ICCV 2025 Workshop</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="icon" type="image/png" href="assets/css/images/slomo_O_black.png" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="assets/css/slomo.css" />
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -30,8 +31,8 @@
                         <ul>
                             <li><a href="#intro" class="active">Introduction</a></li>
                             <li><a href="#schedule">Schedule</a></li>
-                            <li><a href="#challenge">Competition</a></li>
                             <li><a href="#speakers">Speakers</a></li>
+                            <li><a href="#challenge">Competition</a></li>
                             <li><a href="#organizers">Organizers</a></li>
                         </ul>
                     </nav>
@@ -52,16 +53,6 @@
 
                                         <ul>
                                         <li>
-                                            <strong>Movie Question Answering</strong> evaluates a model's ability to comprehend narratives, particularly through story-level reasoning and long-context modeling.<br>
-                                            <div style="height:12px;"></div>
-                                            To advance research in this direction, we present the <strong><em>Short-Films 20K (SF20K) Competition</em></strong> for story-level movie understanding.
-                                            <div style="height:8px;"></div>
-                                            <ul class="actions">
-                                            <li><a href="#challenge" class="button">SF20K Competition Details</a></li>
-                                            </ul>
-                                        </li>
-
-                                        <li>
                                             <strong>Audio Description (AD) Generation</strong> focuses on producing concise, coherent, story-driven narrations for blind and visually impaired (BVI) audiences, complementary to the information provided by the original audio.
                                             <div style="height:12px;"></div>
                                             We host a series of <strong><em>invited talks</em></strong> addressing key open questions:
@@ -70,6 +61,15 @@
                                             <li>How can story-level information be effectively perceived and utilized in downstream tasks?</li>
                                             <li>How can fair evaluation be ensured-e.g., for AD-and how can data leakage into large-scale pre-trained models be minimized?</li>
                                             <li>What are the current limitations of Audio Descriptions, and what are the next steps toward practical automatic AD generation?</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <strong>Movie Question Answering</strong> evaluates a model's ability to comprehend narratives, particularly through story-level reasoning and long-context modeling.<br>
+                                            <div style="height:12px;"></div>
+                                            To advance research in this direction, we present the <strong><em>Short-Films 20K (SF20K) Competition</em></strong> for story-level movie understanding.
+                                            <div style="height:8px;"></div>
+                                            <ul class="actions">
+                                            <li><a href="#challenge" class="button">SF20K Competition Details</a></li>
                                             </ul>
                                         </li>
                                         </ul>
@@ -81,7 +81,7 @@
                         <!-- Schedule -->
                             <section id="schedule" class="main special">
                                 <header class="major">
-                                    <h2>Schedule</h2>
+                                    <h2>Schedule (TBC)</h2>
                                 </header>
                                 <p>The workshop will be held on October, 2025, at the Honolulu Convention Center.<br>
                                 The exact date, time, and room are yet to be confirmed.</p>
@@ -101,35 +101,7 @@
                                     </tbody>
                                 </table>
                             </section>
-
-                        <!-- Competition -->
-                            <section id="challenge" class="main">
-                                <header class="major">
-                                    <h2>Short-Films 20K (SF20K) Competition</h2>
-                                </header>
-                                <p style="margin-bottom: 1.0em;">
-                                    Test your model's ability to perform <em>story-level reasoning</em> on the <a href="https://arxiv.org/abs/2406.10221v2"><strong>Short-Films 20K (SF20K)</strong> dataset</a> - 20,143 publicly-available short films (3,684 h) with automatically and manually curated question-answer pairs.
-                                </p>
-                                <ul class="icon-bullets", style="margin-bottom: 2.2em;">
-                                    <li><strong>Track&nbsp;1: Multiple-Choice Question Answering (MCQA)</strong> --- evaluated by accuracy</li>
-                                    <li><strong>Track&nbsp;2: Open-Ended Question Answering (OEQA)</strong>  --- evaluated by LLM-assisted assessment (LLM-QA-Eval)</li>
-                                </ul>
-                                <!-- Key dates -->
-                                <p style="margin-top: 0.5em;margin-bottom: 0.5em;">
-                                    <strong>Key dates</strong>
-                                </p>
-                                <ul class="key-dates">
-                                <li><strong>19 Jun, 2025:</strong> Server opens</li>
-                                <li><strong>03 Oct, 2025:</strong> Submission deadline</li>
-                                <li><strong>10 Oct, 2025:</strong> Final ranking announced</li>
-                                <li><strong>11 Oct, 2025:</strong> Winners present at the workshop</li>
-                                </ul>
-                                <ul class="actions">
-                                    <li><a href="https://huggingface.co/datasets/rghermi/sf20k" class="button primary">Download SF20K</a></li>
-                                    <li><a href="" class="button">Starter code (Coming Soon)</a></li>
-                                </ul>
-                            </section>
-
+                        
                         <!-- Speakers -->
                         <section id="speakers" class="main special">
                         <header class="major">
@@ -159,6 +131,34 @@
                             </li>
                         </ul>
                         </section>
+                        
+                        <!-- Competition -->
+                            <section id="challenge" class="main">
+                                <header class="major">
+                                    <h2>Short-Films 20K (SF20K) Competition</h2>
+                                </header>
+                                <p style="margin-bottom: 1.0em;">
+                                    Test your model's ability to perform <em>story-level reasoning</em> on the <a href="https://arxiv.org/abs/2406.10221v2"><strong>Short-Films 20K (SF20K)</strong> dataset</a> - 20,143 publicly-available short films (3,684 h) with automatically and manually curated question-answer pairs.
+                                </p>
+                                <ul class="icon-bullets", style="margin-bottom: 2.2em;">
+                                    <li><strong>Track&nbsp;1: Multiple-Choice Question Answering (MCQA)</strong> --- evaluated by accuracy</li>
+                                    <li><strong>Track&nbsp;2: Open-Ended Question Answering (OEQA)</strong>  --- evaluated by LLM-assisted assessment (LLM-QA-Eval)</li>
+                                </ul>
+                                <!-- Key dates -->
+                                <p style="margin-top: 0.5em;margin-bottom: 0.5em;">
+                                    <strong>Key dates</strong>
+                                </p>
+                                <ul class="key-dates">
+                                <li><strong>19 Jun, 2025:</strong> Server opens</li>
+                                <li><strong>03 Oct, 2025:</strong> Submission deadline</li>
+                                <li><strong>10 Oct, 2025:</strong> Final ranking announced</li>
+                                <li><strong>11 Oct, 2025:</strong> Winners present at the workshop</li>
+                                </ul>
+                                <ul class="actions">
+                                    <li><a href="https://huggingface.co/datasets/rghermi/sf20k" class="button primary">Download SF20K</a></li>
+                                    <li><a href="" class="button">Starter code (Coming Soon)</a></li>
+                                </ul>
+                            </section>
 
                         <!-- Organizers -->
                         <section id="organizers" class="main special">
