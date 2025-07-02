@@ -71,7 +71,8 @@
                                             <div style="height:8px;"></div>
                                             <ul class="actions">
                                             <li><a href="#challenge" class="button">SF20K Competition Details</a></li>
-                                            <li><a href="https://huggingface.co/spaces/SLoMO-Workshop/SF20KCompetition" class="button primary">Competition Website</a></li>
+                                            <li><a href="https://huggingface.co/spaces/SLoMO-Workshop/SF20KCompetition" class="button primary">Competition Website (Main track)</a></li>
+                                            <li><a href="https://huggingface.co/spaces/SLoMO-Workshop/SF20KCompetitionConstrained" class="button primary">Competition Website (Secondary track)</a></li>
                                             </ul>
                                         </li>
                                         </ul>
@@ -139,26 +140,52 @@
                                     <h2>Short-Films 20K (SF20K) Competition</h2>
                                 </header>
                                 <p style="margin-bottom: 1.0em;">
-                                    Test your model's ability to perform <em>story-level reasoning</em> on the <a href="https://arxiv.org/abs/2406.10221v2"><strong>Short-Films 20K (SF20K)</strong> dataset</a> - 20,143 publicly-available short films (3,684 h) with automatically and manually curated question-answer pairs.
+                                    <!-- Test your model's ability to perform <em>story-level reasoning</em> on the <a href="https://arxiv.org/abs/2406.10221v2"><strong>Short-Films 20K (SF20K)</strong> dataset</a> - 20,143 publicly-available short films (3,684 h) with automatically and manually curated question-answer pairs. -->
+                                    The <strong>Short-Films 20K (SF20K) Competition</strong> aims to advance story-level video understanding by leveraging the new SF20K dataset. While recent multimodal models have demonstrated progress in video understanding, existing benchmarks are largely limited to short videos with simple narratives. In contrast, our competition focuses on complex, long-term reasoning in storytelling by introducing multiple-choice and open-ended question answering tasks.
+                                    <br>
+                                    The competition is based on <strong>SF20K-Test-Expert</strong>, a subset of the SF20K dataset, which includes manually crafted open-ended questions. The questions are designed to be challenging, requiring long-term reasoning and multimodal understanding of the video content.
                                 </p>
+                                <p style="margin-top: 0.5em;margin-bottom: 0.5em;">
+                                    <strong>Competition Format</strong>
+                                </p>
+                                This edition features <strong>two tracks</strong> focused on <strong>Open-Ended Video Question Answering</strong>:
+                                <div style="height:12px;"></div>
                                 <ul class="icon-bullets", style="margin-bottom: 2.2em;">
-                                    <li><strong>Phase&nbsp;1: Public Test Set Evaluation</strong> <br> During this initial phase, methods are evaluated against the public test set. This phase is primarily for validation purposes, allowing participants to refine their approaches.</li>
+                                    <!-- <li><strong>Phase&nbsp;1: Public Test Set Evaluation</strong> <br> During this initial phase, methods are evaluated against the public test set. This phase is primarily for validation purposes, allowing participants to refine their approaches.</li>
                                     <div style="height:12px;"></div>
-                                    <li><strong>Phase&nbsp;2: Private Test Set Evaluation</strong> <br> The second phase involves evaluation on the <b>private test set</b>, which will be released on <b>October 3rd, 2025</b>. Final rankings will be determined based on performance in this phase. Further instructions regarding the private test set evaluation will be provided closer to the release date.</li>
+                                    <li><strong>Phase&nbsp;2: Private Test Set Evaluation</strong> <br> The second phase involves evaluation on the <b>private test set</b>, which will be released on <b>October 3rd, 2025</b>. Final rankings will be determined based on performance in this phase. Further instructions regarding the private test set evaluation will be provided closer to the release date.</li> -->
+                                    <li><strong><a href="https://huggingface.co/spaces/SLoMO-Workshop/SF20KCompetition">Main track - Unlimited model size</a></strong> <br>
+                                    This track allows for models of any size, encouraging participants to push the limits of performance in video understanding. Participate via the <a href="https://huggingface.co/spaces/SLoMO-Workshop/SF20KCompetition">SF20K Competition</a> platform.
+                                    <div style="height:12px;"></div>
+                                    <li><strong><a href="https://huggingface.co/spaces/SLoMO-Workshop/SF20KCompetitionConstrained">Secondary track - Constrained model size (&lt;8B)</a></strong> <br>
+                                    This track challenges participants to create efficient models under 8 billion parameters, focusing on innovative solutions. Top scores will be required to provide reproducible code. Participate via the <a href="https://huggingface.co/spaces/SLoMO-Workshop/SF20KCompetitionConstrained">[CONSTRAINED MODEL SIZE] SF20K Competition</a> platform.
                                 </ul>
                                 <!-- Key dates -->
                                 <p style="margin-top: 0.5em;margin-bottom: 0.5em;">
-                                    <strong>Important dates</strong>
+                                    <strong>Competition Phases</strong>
+                                </p>
+                                The competition is divided into two phases:
+                                <div style="height:12px;"></div>
+                                <ul class="icon-bullets", style="margin-bottom: 2.2em;">
+                                    <li><strong>Phase 1: Public Test Set Evaluation</strong> <br>
+                                    During this initial phase, methods are evaluated against the public test set. This phase is primarily for validation purposes, allowing participants to refine their approaches. 
+                                    <div style="height:12px;"></div>
+                                    <li><strong>Phase 2: Private Test Set Evaluation</strong> <br>
+                                    For the private leaderboard, we will evaluate models on new, unreleased movies to prevent data contamination. This private test set will be released on <strong>October 3rd, 2025</strong>. Final rankings will be determined based on performance in this phase. <br>
+                                </ul>
+                                <p style="margin-top: 0.5em;margin-bottom: 0.5em;">
+                                    <strong>Important Dates</strong>
                                 </p>
                                 <ul class="key-dates">
-                                <li><strong>19 Jun, 2025:</strong> The competition server launches with data from the public test set</li>
+                                <li><strong>01 Jul, 2025:</strong> The competition server launches with data from the public test set</li>
                                 <li><strong>03 Oct, 2025:</strong> Submission deadline for leaderboard ranking on the public test set</li>
                                 <li><strong>03-10 Oct, 2025:</strong> Private test set evaluation</li>
                                 <li><strong>10 Oct, 2025:</strong> Final rankings announced on the private test set</li>
                                 <li><strong>19 Oct, 2025:</strong> Workshop at ICCV 2025 with winner's presentations</li>
                                 </ul>
                                 <ul class="actions">
-                                    <li><a href="https://huggingface.co/spaces/SLoMO-Workshop/SF20KCompetition" class="button primary">Competition Website</a></li>
+                                    <li><a href="https://huggingface.co/spaces/SLoMO-Workshop/SF20KCompetition" class="button primary">Main Track (Unlimited Model Size)</a></li>
+                                    <li><a href="https://huggingface.co/spaces/SLoMO-Workshop/SF20KCompetitionConstrained" class="button primary">Secondary Track (Constrained Model Size)</a></li>
                                     <li><a href="https://github.com/ridouaneg/sf20k/blob/main/notebooks/competition_tutorial.ipynb" class="button">Starter Code</a></li>
                                 </ul>
                             </section>
