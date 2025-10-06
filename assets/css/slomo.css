@@ -151,8 +151,8 @@ ul.features li .image.avatar img {
     box-sizing: border-box;
 }
 #organizers ul.features li {
-    flex: 0 0 20%;
-    max-width: 20%;
+    flex: 0 0 16%;
+    max-width: 16%;
     padding: 0 1em;
     margin: 0;
     box-sizing: border-box;
