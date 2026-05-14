@@ -1,0 +1,1 @@
+Template adapted from HTML5 UP. Adapted for SLoMO @ ECCV 2026 (2nd Edition). Movie frames in title background are sourced from the Condensed Movies dataset. The 1st edition (ICCV 2025) site is preserved unchanged under ICCV2025/.
