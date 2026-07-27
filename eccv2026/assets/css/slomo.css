@@ -591,9 +591,9 @@ ul.features li .image.avatar img {
         margin-bottom: 1.2em;
     }
     .sponsor-logos {
-        gap: 1.4em;
+        gap: 1.4em !important;
     }
     .sponsor-logos img {
-        height: 2.4em;
+        height: 2.4em !important;
     }
 }
